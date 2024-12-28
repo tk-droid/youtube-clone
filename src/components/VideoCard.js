@@ -1,4 +1,5 @@
- import React from 'react'
+ 
+import React from 'react'
 
 const VideoCard = ({info}) => {
     // console.log(info)
@@ -23,6 +24,16 @@ const VideoCard = ({info}) => {
 </ul>
      </div>
    )
+ }
+
+// High Order Component which shows red border on ad
+ export const AdVideoCard = ({info})=>{
+return (
+  <div className='p-1 m-1 border border-red-700'>
+    <li className='font-bold'>Promoted (High Order Component Used)</li>
+<VideoCard info={info}/>
+  </div>
+)
  }
  
  export default VideoCard
