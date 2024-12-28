@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,  // Allow modern JavaScript syntax (ES11)
+      "sourceType": "module"  // Allow imports/exports
+    },
+    "plugins": ["react"],
+    "rules": {
+      "react/prop-types": "off",  // Optional: Disable prop-types rule if not needed
+      "no-unused-vars": "warn"  // Optional: Warn about unused variables
+    }
+  }
+  
